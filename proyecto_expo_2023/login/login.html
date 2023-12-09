@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="logo">
+            <img src="../img/logo_escuela.png" alt="">
+        </div>
+        <div class="boton">
+            <button id="btnlogin"  class="btn-activo">login</button>
+            <button id="btnregistro">registro</button>
+        </div>
+        <form action="login.php" method="post" id="loginForm" class="loginForm">
+            <div class="caja">
+                <label for="nombre">usuario</label>
+                <input type="text" name="nombre" id="nombre" autocomplete="off">
+            </div>
+            <div class="caja">
+                <label for="clave">contraseña</label>
+                <input type="password" name="clave" id="clave" autocomplete="off">
+            </div>
+            <div class="formButtom">
+                <input type="submit" value="entrar">
+            </div>
+        </form>
+        <form action="registro.php" method="post" id="registroForm" class="registroForm">
+            <div class="caja">
+                <label for="nombreIngreso">nombre completo</label>
+                <input type="text" name="nombreIngreso" id="nombreIngreso" autocomplete="off">
+            </div>
+            <div class="caja">
+                <label for="usuarioIngreso">usuario</label>
+                <input type="text" name="usuarioIngreso" id="usuarioIngreso" autocomplete="off">
+            </div>
+            <div class="caja">
+                <label for="claveIngreso">contraseña</label>
+                <input type="password" name="claveIngreso" id="claveIngreso" autocomplete="off">
+            </div>
+            <div class="formButtom">
+                <input type="submit" value="registrar">
+            </div>
+        </form>
+    </div>
+
+<script src="main.js"></script>
+</body>
+
+</html>
