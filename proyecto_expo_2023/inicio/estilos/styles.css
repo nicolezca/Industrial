@@ -1,0 +1,165 @@
+/* ::root{
+    --principal:black;
+    --secundario:yellow;
+    --tercero:white;
+    --cuarto:gray;
+} */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background:/*  linear-gradient(#6717cd,#042a74)*/ white;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.nab-var{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(4, 4, 85);
+}
+
+.nab-var .logo{
+    margin-left: 20px;
+}
+.logo h1{
+    color: white;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.nab-var nav{
+    width: 30%;
+}
+.nab-var nav .list_link{
+    width: 100%;
+    display: flex;
+}
+.list_link li {
+    padding: 10px;
+    margin-inline: 10px;
+    border-radius: 20px;
+    transition: background-color .3s ease;
+}
+.list_link li a{
+    color: white;
+    transition: all .3s ease-in;
+    font-size: 20px;
+}
+.list_link li:hover{
+    background-color: rgba(128, 128, 128, 0.249);
+}
+
+
+#ver{
+    display: flex;
+    align-items: center;
+}
+#ver  i{
+    transition: all .3s ease;
+    font-size: 18px;
+}
+.list2_link{
+    transition: opacity .3s ease;
+    position: absolute;
+    top: 60px;
+    background-color: rgb(4, 4, 85);
+    padding: 10px;
+    opacity: 0;
+    z-index: 999999;
+}
+.list2_link li {
+    margin: 5px ;
+}
+
+/* contenido_principal */
+.contenido_principal{
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+.banner{
+    background-image: url(../../img/fondo.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    position: relative;
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.banner::after{
+    position: absolute;
+    content: '';
+    width:100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.789);
+    left: 0;
+    top: 0;
+}
+
+.banner img{
+    width:400px;
+    height: 400px;
+    z-index: 9999;
+}
+
+.banner h2,h3{
+    z-index: 9999;
+    color: white;
+    font-size: 60px;
+}
+.mostrar_contador{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    z-index: 9999;
+}
+
+.mostrar_contador .contador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-inline: 20px;
+    padding: 5px 10px;
+}
+.contador .numeros{
+    background-color: brown;
+    text-align: center;
+    padding: 20px 0;
+    width: 60px;
+    border-radius:50%;
+    font-weight: bold;
+    color:white;
+}
+.contador span{
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.grafico{
+    z-index: 9999;
+    margin: 50px 0;
+    width: 70%;
+    height: 600px;
+    }
+
