@@ -1,10 +1,10 @@
 <?php
 
 // Conexión a la base de datos (ajusta los valores según tu configuración)
-$servername = 'localhost';
-$username = 'root';
-$password = '';
-$dbname = 'exposicion_2023';
+$servername = 'DB_HOST';
+$username = 'DB_USER';
+$password = 'DB_PASSW0RD';
+$dbname = 'DB_DATABASE';
 
 // Crear la conexión
 $conn = new mysqli($servername, $username, $password, $dbname);
