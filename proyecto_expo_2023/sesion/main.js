@@ -4,19 +4,18 @@ document.addEventListener("DOMContentLoaded", function () {
     const formLogin = document.getElementById("loginForm");
     const formRegistro = document.getElementById("registroForm");
 
-    btnLogin.classList.add("btn-activo"); // Agregar la clase "btn-activo" al botón de login por defecto
+    const activarBoton = (botonActivado, botonDesactivado, formMostrar, formOcultar) => {
+        formMostrar.style.display = "block";
+        formOcultar.style.display = "none";
+        botonActivado.classList.add("btn-activo");
+        botonDesactivado.classList.remove("btn-activo");
+    };
 
     btnLogin.addEventListener("click", function () {
-        formLogin.style.display = "block";
-        formRegistro.style.display = "none";
-        btnLogin.classList.add("btn-activo"); // Agregar la clase "btn-activo" al botón de login
-        btnRegistro.classList.remove("btn-activo"); // Quitar la clase "btn-activo" al botón de registro
+        activarBoton(btnLogin, btnRegistro, formLogin, formRegistro);
     });
 
     btnRegistro.addEventListener("click", function () {
-        formLogin.style.display = "none";
-        formRegistro.style.display = "block";
-        btnRegistro.classList.add("btn-activo"); // Agregar la clase "btn-activo" al botón de registro
-        btnLogin.classList.remove("btn-activo"); // Quitar la clase "btn-activo" al botón de login
+        activarBoton(btnRegistro, btnLogin, formRegistro, formLogin);
     });
 });
