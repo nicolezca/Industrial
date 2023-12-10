@@ -1,10 +1,3 @@
-/* ::root{
-    --principal:black;
-    --secundario:yellow;
-    --tercero:white;
-    --cuarto:gray;
-} */
-
 *{
     padding: 0;
     margin: 0;
@@ -14,10 +7,8 @@
 }
 
 body{
-    background:/*  linear-gradient(#6717cd,#042a74)*/ white;
     width: 100%;
     height: 100vh;
-
 }
 
 .nab-var{
@@ -85,7 +76,6 @@ body{
 .contenido_principal{
     width: 100%;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
     margin: 0;
@@ -155,11 +145,3 @@ body{
     font-size: 18px;
     letter-spacing: 1px;
 }
-
-.grafico{
-    z-index: 9999;
-    margin: 50px 0;
-    width: 70%;
-    height: 600px;
-    }
-
