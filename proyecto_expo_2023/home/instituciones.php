@@ -4,6 +4,7 @@ include('../database/bd.php');
 
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../public/css/styles.css">
@@ -12,9 +13,10 @@ include('../database/bd.php');
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Registo Intituciones</title>
 </head>
+
 <body>
     <?php include('../components/cabecera.php'); ?>
-    
+
     <main class="contenido">
         <div class="banner_form">
             <img src="../img/logo_escuela.png" alt="Logo Industrial" title="Logo Industrial">
@@ -44,11 +46,12 @@ include('../database/bd.php');
                 </div>
             </div>
             <div class="boton_envio">
-                    <input type="submit" value="cargar">
-                </div>
+                <input type="submit" value="cargar">
+            </div>
         </form>
     </main>
-    
+
     <script src="../public/js/main.js"></script>
 </body>
+
 </html>
